@@ -7,7 +7,7 @@ function fish_prompt
 		set -l ref (git show-ref --head --abbrev | awk '{print substr($0,0,7)}' | sed -n 1p)
 		
 		if git::is_stashed
-			echo -n -s (white)"^"(off)
+			echo -n -s (cyan)"^"(off)
 		end
 
 		echo -n -s (red)"("(off)
