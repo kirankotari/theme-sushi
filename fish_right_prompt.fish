@@ -118,7 +118,7 @@ function fish_right_prompt
 		printf (yellow)"("(dim)$terraform_workspace_name(yellow)") "(off)
 	end
 
-	printf (yellow)"("(dim)$cwd(yellow)") "(off)
-	printf (dim)(date +%H(yellow):(dim)%M(yellow):(dim)%S)(off)
+	printf (yellow)"("(cyan)$cwd(yellow)") "(off)
+	# printf (dim)(date +%H(yellow):(dim)%M(yellow):(dim)%S)(off)
 
 end
